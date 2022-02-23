@@ -1,9 +1,9 @@
+import { useState, useEffect } from 'react';
 import FormattedTime from './components/FormattedTime/FormattedTime'
 import Button from './components/Button/Button'
-import { useState, useEffect } from 'react';
 
 const App = () => {
-  const [time, setTime] = useState(10000000);
+  const [time, setTime] = useState(0);
   const [interval, changeInterval] = useState(null);
   useEffect(() => {
     let intervalOn = null;

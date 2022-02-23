@@ -1,11 +1,11 @@
 import styles from './Button.module.scss';
 
-const Button = props => {
+const Button = ({changeInterval, setTime} ) => {
     return (
       <div>
-        <button className={styles.button} onClick={() => props.changeInterval(true)}>Start</button>
-        <button className={styles.button} onClick={() => props.changeInterval(false)}>Stop</button>
-        <button className={styles.button} onClick={() => props.setTime(0)}>Reset</button>
+        <button className={styles.button} onClick={() => changeInterval(true)}>Start</button>
+        <button className={styles.button} onClick={() => changeInterval(false)}>Stop</button>
+        <button className={styles.button} onClick={() => setTime(0)}>Reset</button>
       </div>
     );
 }
